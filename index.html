@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Тренажёр: три в одном</h1>
+
+    <div class="block">
+        <h2>1. Замыкание</h2>
+
+        <p>Счёт: <span id="score">0</span></p>
+
+        <button onclick="score.addPoint(); showScore()">Добавить очко</button>
+        <button onclick="score.reset(); showScore()">Сброс</button>
+    </div>
+
+    <div class="block">
+        <h2>2. Рекурсия</h2>
+
+        <input type="number" id="number" placeholder="Введите число">
+
+        <button onclick="calculateSum()">Посчитать сумму</button>
+
+        <p id="sumResult"></p>
+
+        <input type="text" id="repeatText" placeholder="Введите текст">
+        <input type="number" id="repeatNumber" placeholder="Количество">
+
+        <button onclick="repeat()">Повторить</button>
+
+        <p id="repeatResult"></p>
+    </div>
+
+    <div class="block">
+        <h2>3. Каррирование</h2>
+
+        <p id="curryingResult"></p>
+    </div>
+
+    <div class="block">
+        <h2>4. Проверка палиндрома</h2>
+
+        <input type="text" id="word" placeholder="Введите слово">
+
+        <button onclick="checkPalindrome()">Проверить</button>
+
+        <p id="palindromeResult"></p>
+    </div>
+
+    <div class="block">
+        <h2>5. Счётчик с помощью замыкания</h2>
+
+        <p id="counter">0</p>
+
+        <button id="counterButton">Нажми меня</button>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
